@@ -1,6 +1,8 @@
 import React from 'react';
 import * as firebase from 'firebase';
 
+import RoomList from './RoomList';
+
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBSP6J509Gaj_fzMG3oBfBtOy1MBuOmdA4",
@@ -18,9 +20,11 @@ import * as firebase from 'firebase';
     render() {
       return (
         <div>
-          Hi
+          <RoomList
+          firebase={ firebase }
+          />
         </div>
-      )
+      );
     }
   }
 
